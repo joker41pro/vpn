@@ -18,3 +18,4 @@ apt-get -y remove apt-listchanges
 echo "   - MYIP : $MYIP"
 echo "   - MYIP2 : $MYIP2"
 echo "   - OS : $OS"
+echo "   - OS : $OS"
