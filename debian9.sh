@@ -14,9 +14,17 @@ fi
 MYIP2="s/xxxxxxxxx/$MYIP/g";
 apt-get -y remove apt-listchanges
 
+# go to root
+cd
+
+
+if [ ! -e /etc/rc.local ]; then
+  echo "   - OS : $OS"
+  echo "   - OS : $OS"
+  echo "   - OS : $OS"
+fi
+
 
 echo "   - MYIP : $MYIP"
 echo "   - MYIP2 : $MYIP2"
-echo "   - OS : $OS"
-echo "   - OS : $OS"
-echo "   - OS : $OS"
+
