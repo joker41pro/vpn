@@ -1,14 +1,20 @@
-clear
-echo ""
-echo "I need to ask some questions before starting setup"
-echo "You can leave the default option and just hit enter if you agree with the option"
-echo ""
-echo "First I need to know the new password of MySQL root user:"
-read -p "Password baru: " -e -i lenz541 DatabasePass
-echo ""
-echo "Finally, name the Database Name for OCS Panels"
-echo " Please, use one word only, no special characters other than Underscore (_)"
-read -p " Database Name: " -e -i OCS_PANEL DatabaseName
-echo ""
-echo "Okay, that's all I need. We are ready to setup your OCS Panels now"
-read -n1 -r -p "Press any key to continue..."
+#Requirement
+if [ ! -e /usr/bin/curl ]; then
+    apt-get -y update && apt-get -y upgrade
+	apt-get -y install curl
+fi
+
+# initializing var
+export DEBIAN_FRONTEND=noninteractive
+OS=`uname -m`;
+MYIP=$(curl -4 icanhazip.com)
+if [ $MYIP = "" ]; then
+   MYIP=`ifconfig | grep 'inet addr:' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | cut -d: -f2 | awk '{ print $1}' | head -1`;
+fi
+MYIP2="s/xxxxxxxxx/$MYIP/g";
+apt-get -y remove apt-listchanges
+
+
+echo "   - MYIP : $MYIPOS"
+echo "   - MYIP2 : $MYIP2OS"
+echo "   - OS : $OSOS"
