@@ -2,7 +2,7 @@
 
 - Debian 9 x86 & x64
 
-`apt-get -y install wget && wget https://raw.githubusercontent.com/daybreakersx/premscript/master/Debian8 && chmod +x Debian8 && ./Debian8 && rm -f Debian8 && history -c`
+`apt-get -y install wget && wget https://raw.githubusercontent.com/phisanuphoca/vpn/master/debian9.sh && chmod +x debian9.sh && ./debian9.sh && rm -f debian9.sh && history -c`
 
 
 
