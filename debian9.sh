@@ -15,6 +15,6 @@ MYIP2="s/xxxxxxxxx/$MYIP/g";
 apt-get -y remove apt-listchanges
 
 
-echo "   - MYIP : $MYIPOS"
-echo "   - MYIP2 : $MYIP2OS"
-echo "   - OS : $OSOS"
+echo "   - MYIP : $MYIP"
+echo "   - MYIP2 : $MYIP2"
+echo "   - OS : $OS"
